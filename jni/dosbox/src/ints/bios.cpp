@@ -1208,7 +1208,7 @@ static Bitu INT11_Handler(void) {
 static void BIOS_HostTimeSync() {
 	/* Setup time and date */
 	struct timeb timebuffer;
-	ftime(&timebuffer);
+	//ftime(&timebuffer);
 	
 	struct tm *loctime;
 	loctime = localtime (&timebuffer.time);

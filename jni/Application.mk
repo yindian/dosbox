@@ -2,7 +2,7 @@
 APP_ABI := armeabi-v7a
 APP_STL := stlport_static
 
-APP_PLATFORM := android-9
+APP_PLATFORM := android-17
 APP_OPTIM := release
 
-NDK_TOOLCHAIN_VERSION := 4.8
+NDK_TOOLCHAIN_VERSION := 4.9
