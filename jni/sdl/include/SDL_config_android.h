@@ -37,11 +37,11 @@
 #define SDL_VIDEO_RENDER_OGL_ES 1
 #define SDL_VIDEO_RENDER_OGL_ES_GL_CONTEXT_LOSING_IMMUNE 1
 /* SDL uses some OpenGL textures for drawing in-screen keyboard, so application should allocate OpenGL texture ID-s starting from this value */
-#define SDL_GL_FIRST_SAFE_TEXTURE_ID 25
+#define SDL_GL_FIRST_SAFE_TEXTURE_ID 26
 
 #define SDL_AUDIO_DRIVER_ANDROID 1
 
-#define SDL_CDROM_DISABLED 1
+#define SDL_CDROM_DUMMY 1
 
 #define SDL_JOYSTICK_ANDROID 1
 
@@ -61,8 +61,12 @@
 
 #define HAVE_STDIO_H 1
 
-
+#ifdef __LP64__
+#define SIZEOF_VOIDP 8
+#else
 #define SIZEOF_VOIDP 4
+#endif
+
 #define SDL_HAS_64BIT_TYPE 1
 
 /* FireSlash found that SDL native memcpy crashes sometimes, these defines fix it (and they are faster) */
@@ -83,7 +87,12 @@
 #define HAVE_CTYPE_H 1
 #define HAVE_MATH_H 1
 #undef HAVE_ICONV_H
-#define HAVE_SIGNAL_H 1
+/* Android 4.4 has bsd_signal() libc symbol and an inline signal() function in headers,
+   Android 5.0 introduces signal() symbol in libc,
+   which means that libsdl.so compiled for Android 5.0 will crash on Andorid 4.4 and below,
+   furthermore, signal handlers will do nothing good and will block the native stack trace collector on Android,
+   so it's better to disable signals altogether. */
+#undef HAVE_SIGNAL_H
 #undef HAVE_ALTIVEC_H
 
 #define HAVE_MALLOC 1
@@ -162,31 +171,7 @@
 #define HAVE_SYSCONF 1
 #undef HAVE_SYSCTLBYNAME
 #undef SDL_ALTIVEC_BLITTERS
-#define SDL_ASSEMBLY_ROUTINES 1 // There is no assembly code for Arm CPU yet
-
-/* Prototypes for Android-specific functions */
-
-#include "begin_code.h"
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-/* 
-Sets callbacks to be called when OS decides to put application to background, and restored to foreground.
-*/
-typedef void ( * SDL_ANDROID_ApplicationPutToBackgroundCallback_t ) (void);
-
-extern DECLSPEC int SDLCALL SDL_ANDROID_SetApplicationPutToBackgroundCallback(
-		SDL_ANDROID_ApplicationPutToBackgroundCallback_t appPutToBackground,
-		SDL_ANDROID_ApplicationPutToBackgroundCallback_t appRestored );
-
-/* Use these functions instead of setting volume to 0, that will save CPU and battery on device */
-extern DECLSPEC int SDLCALL SDL_ANDROID_PauseAudioPlayback(void);
-extern DECLSPEC int SDLCALL SDL_ANDROID_ResumeAudioPlayback(void);
-
-#ifdef __cplusplus
-}
-#endif
-#include "close_code.h"
+#define SDL_ASSEMBLY_ROUTINES 1
+#define HAVE_GCC_ATOMICS 1
 
 #endif /* _SDL_config_minimal_h */

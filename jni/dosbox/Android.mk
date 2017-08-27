@@ -27,7 +27,8 @@ MY_PATH := $(LOCAL_PATH)
 LOCAL_PATH := $(abspath $(LOCAL_PATH))
 
 CG_SRCDIR := $(LOCAL_PATH)
-LOCAL_CFLAGS :=	-I$(LOCAL_PATH)/include \
+LOCAL_CFLAGS :=	-I$(LOCAL_PATH)../include \
+				-I$(LOCAL_PATH)/include \
 				$(foreach D, $(CG_SUBDIRS), -I$(CG_SRCDIR)/$(D)) \
 				-I$(LOCAL_PATH)/../sdl/include \
 				-I$(LOCAL_PATH)/../fishstix/include \

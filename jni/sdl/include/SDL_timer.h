@@ -48,7 +48,6 @@ extern "C" {
  */ 
 extern DECLSPEC Uint32 SDLCALL SDL_GetTicks(void);
 
-
 /** Wait a specified number of milliseconds before returning */
 extern DECLSPEC void SDLCALL SDL_Delay(Uint32 ms);
 

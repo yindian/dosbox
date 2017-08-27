@@ -68,8 +68,8 @@ typedef enum {
        SDL_EVENT_RESERVEDB,		/**< Reserved for future use.. */
        SDL_VIDEORESIZE,			/**< User resized video mode */
        SDL_VIDEOEXPOSE,			/**< Screen needs to be redrawn */
-       SDL_MOUSEMOTION_ABSOLUTE,		/**< absolute mouse movement */
-       SDL_MOUSEMOTION_WARP,		/**< warp mouse motion */
+       SDL_EVENT_RESERVED2,		/**< Reserved for future use.. */
+       SDL_EVENT_RESERVED3,		/**< Reserved for future use.. */
        SDL_EVENT_RESERVED4,		/**< Reserved for future use.. */
        SDL_EVENT_RESERVED5,		/**< Reserved for future use.. */
        SDL_EVENT_RESERVED6,		/**< Reserved for future use.. */

@@ -167,7 +167,7 @@ static raster_info *add_rasterizer(voodoo_state *v, const raster_info *cinfo)
 				info->eff_color_path, info->eff_alpha_mode, info->eff_fog_mode, info->eff_fbz_mode,
 				info->eff_tex_mode_0, info->eff_tex_mode_1, hash);
 
-		printf("RASTERIZER_ENTRY( 0x%08X, 0x%08X, 0x%08X, 0x%08X, 0x%08X, 0x%08X ) \n",
+		printf("RASTERIZER_ENTRY( 0x%08X, 0x%08X, 0x%08X, 0x%08X, 0x%08X, 0x%08X %c 0x%08x 0x%08x) \n",
 			info->eff_color_path,
 			info->eff_alpha_mode,
 			info->eff_fog_mode,
