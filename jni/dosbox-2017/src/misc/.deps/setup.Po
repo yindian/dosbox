@@ -1,0 +1,872 @@
+setup.o: setup.cpp ../../include/dosbox.h ../../config.h \
+ ../../include/logging.h ../../include/cross.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sys/stat.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/io.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/string.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sys/types.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/string \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/c++config.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/os_defines.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stringfwd.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/memoryfwd.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/char_traits.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_algobase.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/functexcept.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/exception_defines.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/cpp_type_traits.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/ext/type_traits.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/ext/numeric_traits.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_pair.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/move.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/concept_check.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/type_traits \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_iterator_base_types.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_iterator_base_funcs.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/debug/assertions.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_iterator.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/ptr_traits.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/debug/debug.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/predefined_ops.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/postypes.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/cwchar \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/wchar.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/cstdint \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stdint.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdint.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stddef.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stddef.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/allocator.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/c++allocator.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/ext/new_allocator.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/new \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/exception \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/atomic_lockfree_defines.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/exception_ptr.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/nested_exception.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/localefwd.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/c++locale.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/clocale \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/locale.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/iosfwd \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/cctype \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/ctype.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/ostream_insert.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/cxxabi_forced.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_function.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/backward/binders.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/range_access.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/initializer_list \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/basic_string.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/ext/atomicity.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/gthr.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/gthr-default.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pthread.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/errno.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/process.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include-fixed/limits.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include-fixed/syslimits.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/limits.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/signal.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/atomic_word.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/ext/alloc_traits.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/alloc_traits.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/ext/string_conversions.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/cstdlib \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/stdlib.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/malloc.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/cstdio \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/cerrno \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/functional_hash.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/hash_bytes.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/basic_string.tcc \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/dirent.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/unistd.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/getopt.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/windows.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/excpt.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stdarg.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/windef.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/minwindef.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winapifamily.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/specstrings.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sal.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winnt.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_unicode.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/apiset.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/basetsd.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/guiddef.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/x86intrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/ia32intrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/mmintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/xmmintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/mm_malloc.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/emmintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/pmmintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/tmmintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/ammintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/smmintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/popcntintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/wmmintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/immintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avxintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx2intrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512fintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512erintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512pfintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512cdintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512vlintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512bwintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512dqintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512vlbwintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512vldqintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512ifmaintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512ifmavlintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512vbmiintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512vbmivlintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/shaintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/lzcntintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/bmiintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/bmi2intrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/fmaintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/f16cintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/rtmintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/xtestintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/mm3dnow.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/prfchwintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/fma4intrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/xopintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/lwpintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/tbmintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/rdseedintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/fxsrintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/xsaveintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/xsaveoptintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/adxintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/clwbintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/clflushoptintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/xsavesintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/xsavecintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/mwaitxintrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/clzerointrin.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/pkuintrin.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pshpack4.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/poppack.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pshpack4.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/poppack.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pshpack8.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pshpack8.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/ktmtypes.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winbase.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/apisetcconv.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/minwinbase.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/bemapiset.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/debugapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/errhandlingapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/fibersapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/fileapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/handleapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/heapapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/ioapiset.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/interlockedapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/jobapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/libloaderapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/memoryapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/namedpipeapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/namespaceapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/processenv.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/processthreadsapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/processtopologyapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/profileapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/securityappcontainer.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/securitybaseapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/synchapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sysinfoapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/systemtopologyapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/utilapiset.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/wow64apiset.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winerror.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/fltwinerror.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/timezoneapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/wingdi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pshpack1.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winuser.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/tvout.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winnls.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/datetimeapi.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stringapiset.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/wincon.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winver.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winreg.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/reason.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winnetwk.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/wnnc.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/virtdisk.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stralign.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stralign_s.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winsvc.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/mcx.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/imm.h \
+ ../../include/setup.h C:/retro/msys64/mingw64/include/c++/6.3.0/list \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_list.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/allocated_ptr.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/ext/aligned_buffer.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/list.tcc \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/vector \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_construct.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_uninitialized.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_vector.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_bvector.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/vector.tcc \
+ ../../include/control.h ../../include/programs.h ../../include/dos_inc.h \
+ ../../include/dos_system.h ../../include/support.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/strings.h \
+ ../../include/mem.h ../../include/support.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/fstream \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/istream \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/ios \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/ios_base.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/locale_classes.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/locale_classes.tcc \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/system_error \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/error_constants.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/stdexcept \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/streambuf \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/streambuf.tcc \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/basic_ios.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/locale_facets.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/cwctype \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/wctype.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/ctype_base.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/streambuf_iterator.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/locale_facets.tcc \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/basic_ios.tcc \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/ostream \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/ostream.tcc \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/istream.tcc \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/codecvt.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/c++io.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/fstream.tcc \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/sstream \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/sstream.tcc \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/limits
+
+../../include/dosbox.h:
+
+../../config.h:
+
+../../include/logging.h:
+
+../../include/cross.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sys/stat.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/io.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/string.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sys/types.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/string:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/c++config.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/os_defines.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/cpu_defines.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stringfwd.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/memoryfwd.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/char_traits.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_algobase.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/functexcept.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/exception_defines.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/cpp_type_traits.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/ext/type_traits.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/ext/numeric_traits.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_pair.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/move.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/concept_check.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/type_traits:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_iterator_base_types.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_iterator_base_funcs.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/debug/assertions.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_iterator.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/ptr_traits.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/debug/debug.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/predefined_ops.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/postypes.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/cwchar:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/wchar.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/cstdint:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stdint.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdint.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stddef.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stddef.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/allocator.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/c++allocator.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/ext/new_allocator.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/new:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/exception:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/atomic_lockfree_defines.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/exception_ptr.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/nested_exception.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/localefwd.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/c++locale.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/clocale:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/locale.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/iosfwd:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/cctype:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/ctype.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/ostream_insert.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/cxxabi_forced.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_function.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/backward/binders.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/range_access.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/initializer_list:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/basic_string.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/ext/atomicity.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/gthr.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/gthr-default.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pthread.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/errno.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/process.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include-fixed/limits.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include-fixed/syslimits.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/limits.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/signal.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pthread_signal.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pthread_compat.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/atomic_word.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/ext/alloc_traits.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/alloc_traits.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/ext/string_conversions.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/cstdlib:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdlib.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/stdlib.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/malloc.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/cstdio:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/cerrno:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/functional_hash.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/hash_bytes.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/basic_string.tcc:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/dirent.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/unistd.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/getopt.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/windows.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sdkddkver.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/excpt.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stdarg.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdarg.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/windef.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/minwindef.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winapifamily.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/specstrings.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sal.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winnt.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_unicode.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/apiset.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/basetsd.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/guiddef.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/x86intrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/ia32intrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/mmintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/xmmintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/mm_malloc.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/emmintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/pmmintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/tmmintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/ammintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/smmintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/popcntintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/wmmintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/immintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avxintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx2intrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512fintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512erintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512pfintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512cdintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512vlintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512bwintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512dqintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512vlbwintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512vldqintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512ifmaintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512ifmavlintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512vbmiintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/avx512vbmivlintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/shaintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/lzcntintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/bmiintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/bmi2intrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/fmaintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/f16cintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/rtmintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/xtestintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/mm3dnow.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/prfchwintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/fma4intrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/xopintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/lwpintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/tbmintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/rdseedintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/fxsrintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/xsaveintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/xsaveoptintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/adxintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/clwbintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/clflushoptintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/xsavesintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/xsavecintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/mwaitxintrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/clzerointrin.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/pkuintrin.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pshpack4.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/poppack.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pshpack4.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pshpack2.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/poppack.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pshpack2.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pshpack8.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pshpack8.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/ktmtypes.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winbase.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/apisetcconv.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/minwinbase.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/bemapiset.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/debugapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/errhandlingapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/fibersapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/fileapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/handleapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/heapapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/ioapiset.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/interlockedapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/jobapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/libloaderapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/memoryapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/namedpipeapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/namespaceapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/processenv.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/processthreadsapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/processtopologyapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/profileapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/securityappcontainer.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/securitybaseapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/synchapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sysinfoapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/systemtopologyapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/utilapiset.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/wow64apiset.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winerror.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/fltwinerror.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/timezoneapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/wingdi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pshpack1.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winuser.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/tvout.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winnls.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/datetimeapi.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stringapiset.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/wincon.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winver.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winreg.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/reason.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winnetwk.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/wnnc.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/virtdisk.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stralign.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stralign_s.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/winsvc.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/mcx.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/imm.h:
+
+../../include/setup.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/list:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_list.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/allocated_ptr.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/ext/aligned_buffer.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/list.tcc:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/vector:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_construct.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_uninitialized.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_vector.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_bvector.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/vector.tcc:
+
+../../include/control.h:
+
+../../include/programs.h:
+
+../../include/dos_inc.h:
+
+../../include/dos_system.h:
+
+../../include/support.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/strings.h:
+
+../../include/mem.h:
+
+../../include/support.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/fstream:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/istream:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/ios:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/ios_base.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/locale_classes.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/locale_classes.tcc:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/system_error:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/error_constants.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/stdexcept:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/streambuf:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/streambuf.tcc:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/basic_ios.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/locale_facets.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/cwctype:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/wctype.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/ctype_base.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/streambuf_iterator.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/ctype_inline.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/locale_facets.tcc:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/basic_ios.tcc:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/ostream:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/ostream.tcc:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/istream.tcc:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/codecvt.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/basic_file.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/c++io.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/fstream.tcc:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/sstream:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/bits/sstream.tcc:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/limits:
