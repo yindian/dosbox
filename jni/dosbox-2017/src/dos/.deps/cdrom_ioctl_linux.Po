@@ -1,5 +1,9 @@
 cdrom_ioctl_linux.o: cdrom_ioctl_linux.cpp \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/string.h \
+ C:/retro/msys64/mingw64/include/SDL/SDL_version.h \
+ C:/retro/msys64/mingw64/include/SDL/SDL_stdinc.h \
+ C:/retro/msys64/mingw64/include/SDL/SDL_config.h \
+ C:/retro/msys64/mingw64/include/SDL/SDL_platform.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sys/types.h \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw.h \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -7,11 +11,38 @@ cdrom_ioctl_linux.o: cdrom_ioctl_linux.cpp \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/vadefs.h \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- cdrom.h C:/retro/msys64/mingw64/include/c++/6.3.0/string \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/stdlib.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/cstdlib \
  C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/os_defines.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include-fixed/limits.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include-fixed/syslimits.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/limits.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/malloc.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stddef.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stddef.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stdarg.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/string.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/strings.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/inttypes.h \
+ C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stdint.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdint.h \
+ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/ctype.h \
+ C:/retro/msys64/mingw64/include/SDL/begin_code.h \
+ C:/retro/msys64/mingw64/include/SDL/close_code.h cdrom.h \
+ C:/retro/msys64/mingw64/include/c++/6.3.0/string \
  C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stringfwd.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/bits/memoryfwd.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/bits/char_traits.h \
@@ -35,17 +66,9 @@ cdrom_ioctl_linux.o: cdrom_ioctl_linux.cpp \
  C:/retro/msys64/mingw64/include/c++/6.3.0/bits/postypes.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/cwchar \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/wchar.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/cstdint \
- C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stdint.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdint.h \
- C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stddef.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stddef.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/bits/allocator.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/c++allocator.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/ext/new_allocator.h \
@@ -58,11 +81,8 @@ cdrom_ioctl_linux.o: cdrom_ioctl_linux.cpp \
  C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/c++locale.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/clocale \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/locale.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/iosfwd \
  C:/retro/msys64/mingw64/include/c++/6.3.0/cctype \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/ctype.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/bits/ostream_insert.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/bits/cxxabi_forced.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stl_function.h \
@@ -75,11 +95,7 @@ cdrom_ioctl_linux.o: cdrom_ioctl_linux.cpp \
  C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/gthr-default.h \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pthread.h \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/errno.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sys/types.h \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/process.h \
- C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include-fixed/limits.h \
- C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include-fixed/syslimits.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/limits.h \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/signal.h \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pthread_signal.h \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
@@ -90,11 +106,6 @@ cdrom_ioctl_linux.o: cdrom_ioctl_linux.cpp \
  C:/retro/msys64/mingw64/include/c++/6.3.0/ext/alloc_traits.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/bits/alloc_traits.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/ext/string_conversions.h \
- C:/retro/msys64/mingw64/include/c++/6.3.0/cstdlib \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdlib.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
- C:/retro/msys64/mingw64/include/c++/6.3.0/stdlib.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/malloc.h \
  C:/retro/msys64/mingw64/include/c++/6.3.0/cstdio \
  C:/retro/msys64/mingw64/include/c++/6.3.0/cerrno \
  C:/retro/msys64/mingw64/include/c++/6.3.0/bits/functional_hash.h \
@@ -140,16 +151,6 @@ cdrom_ioctl_linux.o: cdrom_ioctl_linux.cpp \
  ../../include/mem.h ../../include/mixer.h \
  C:/retro/msys64/mingw64/include/SDL/SDL.h \
  C:/retro/msys64/mingw64/include/SDL/SDL_main.h \
- C:/retro/msys64/mingw64/include/SDL/SDL_stdinc.h \
- C:/retro/msys64/mingw64/include/SDL/SDL_config.h \
- C:/retro/msys64/mingw64/include/SDL/SDL_platform.h \
- C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stdarg.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdarg.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/strings.h \
- C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/inttypes.h \
- C:/retro/msys64/mingw64/include/SDL/begin_code.h \
- C:/retro/msys64/mingw64/include/SDL/close_code.h \
  C:/retro/msys64/mingw64/include/SDL/SDL_audio.h \
  C:/retro/msys64/mingw64/include/SDL/SDL_error.h \
  C:/retro/msys64/mingw64/include/SDL/SDL_endian.h \
@@ -302,7 +303,15 @@ cdrom_ioctl_linux.o: cdrom_ioctl_linux.cpp \
  C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/imm.h wnaspi32.h \
  ../../include/support.h
 
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/string.h:
+C:/retro/msys64/mingw64/include/SDL/SDL_version.h:
+
+C:/retro/msys64/mingw64/include/SDL/SDL_stdinc.h:
+
+C:/retro/msys64/mingw64/include/SDL/SDL_config.h:
+
+C:/retro/msys64/mingw64/include/SDL/SDL_platform.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sys/types.h:
 
 C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h:
 
@@ -318,17 +327,71 @@ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h:
 
 C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
 
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h:
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h:
 
-cdrom.h:
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h:
 
-C:/retro/msys64/mingw64/include/c++/6.3.0/string:
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/stdlib.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/cstdlib:
 
 C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/c++config.h:
 
 C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/os_defines.h:
 
 C:/retro/msys64/mingw64/include/c++/6.3.0/x86_64-w64-mingw32/bits/cpu_defines.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdlib.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include-fixed/limits.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include-fixed/syslimits.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/limits.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/malloc.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stddef.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stddef.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stdarg.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdarg.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/string.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/strings.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/inttypes.h:
+
+C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stdint.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdint.h:
+
+C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/ctype.h:
+
+C:/retro/msys64/mingw64/include/SDL/begin_code.h:
+
+C:/retro/msys64/mingw64/include/SDL/close_code.h:
+
+cdrom.h:
+
+C:/retro/msys64/mingw64/include/c++/6.3.0/string:
 
 C:/retro/msys64/mingw64/include/c++/6.3.0/bits/stringfwd.h:
 
@@ -376,27 +439,11 @@ C:/retro/msys64/mingw64/include/c++/6.3.0/cwchar:
 
 C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/wchar.h:
 
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h:
-
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h:
-
 C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h:
-
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/swprintf.inl:
 
 C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
 
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h:
-
 C:/retro/msys64/mingw64/include/c++/6.3.0/cstdint:
-
-C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stdint.h:
-
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdint.h:
-
-C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stddef.h:
-
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stddef.h:
 
 C:/retro/msys64/mingw64/include/c++/6.3.0/bits/allocator.h:
 
@@ -422,15 +469,9 @@ C:/retro/msys64/mingw64/include/c++/6.3.0/clocale:
 
 C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/locale.h:
 
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h:
-
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
-
 C:/retro/msys64/mingw64/include/c++/6.3.0/iosfwd:
 
 C:/retro/msys64/mingw64/include/c++/6.3.0/cctype:
-
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/ctype.h:
 
 C:/retro/msys64/mingw64/include/c++/6.3.0/bits/ostream_insert.h:
 
@@ -456,15 +497,7 @@ C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/pthread.h:
 
 C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/errno.h:
 
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sys/types.h:
-
 C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/process.h:
-
-C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include-fixed/limits.h:
-
-C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include-fixed/syslimits.h:
-
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/limits.h:
 
 C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/signal.h:
 
@@ -485,16 +518,6 @@ C:/retro/msys64/mingw64/include/c++/6.3.0/ext/alloc_traits.h:
 C:/retro/msys64/mingw64/include/c++/6.3.0/bits/alloc_traits.h:
 
 C:/retro/msys64/mingw64/include/c++/6.3.0/ext/string_conversions.h:
-
-C:/retro/msys64/mingw64/include/c++/6.3.0/cstdlib:
-
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdlib.h:
-
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
-
-C:/retro/msys64/mingw64/include/c++/6.3.0/stdlib.h:
-
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/malloc.h:
 
 C:/retro/msys64/mingw64/include/c++/6.3.0/cstdio:
 
@@ -591,26 +614,6 @@ C:/retro/msys64/mingw64/include/c++/6.3.0/bits/sstream.tcc:
 C:/retro/msys64/mingw64/include/SDL/SDL.h:
 
 C:/retro/msys64/mingw64/include/SDL/SDL_main.h:
-
-C:/retro/msys64/mingw64/include/SDL/SDL_stdinc.h:
-
-C:/retro/msys64/mingw64/include/SDL/SDL_config.h:
-
-C:/retro/msys64/mingw64/include/SDL/SDL_platform.h:
-
-C:/retro/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/6.3.0/include/stdarg.h:
-
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/stdarg.h:
-
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h:
-
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/strings.h:
-
-C:/retro/msys64/mingw64/x86_64-w64-mingw32/include/inttypes.h:
-
-C:/retro/msys64/mingw64/include/SDL/begin_code.h:
-
-C:/retro/msys64/mingw64/include/SDL/close_code.h:
 
 C:/retro/msys64/mingw64/include/SDL/SDL_audio.h:
 

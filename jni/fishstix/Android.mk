@@ -27,8 +27,8 @@ LOCAL_SRC_FILES := $(foreach F, $(CG_SUBDIRS), $(addprefix $(F)/,$(notdir $(wild
 LOCAL_ARM_MODE := arm
 
 LOCAL_CPPFLAGS := $(LOCAL_CFLAGS)
-LOCAL_CXXFLAGS := $(LOCAL_CFLAGS)
-LOCAL_STATIC_LIBRARIES := fishstix_al dosbox_main
+LOCAL_CXXFLAGS := $(LOCAL_CFLAGS) -fexceptions
+LOCAL_STATIC_LIBRARIES := fishstix_al dosbox_main-2017
 LOCAL_LDLIBS += -llog -ljnigraphics 
 
 

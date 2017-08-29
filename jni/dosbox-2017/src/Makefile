@@ -109,7 +109,9 @@ dosbox_OBJECTS = $(am_dosbox_OBJECTS)
 dosbox_DEPENDENCIES = cpu/libcpu.a debug/libdebug.a dos/libdos.a \
 	fpu/libfpu.a hardware/libhardware.a gui/libgui.a \
 	ints/libints.a misc/libmisc.a shell/libshell.a \
-	hardware/serialport/libserial.a libs/gui_tk/libgui_tk.a
+	hardware/serialport/libserial.a libs/gui_tk/libgui_tk.a \
+	sdl_cdrom/libcsdlcdrom.a sdl_cdrom/macos/libcsdlcdrommacos.a \
+	sdl_cdrom/macosx/libcsdlcdrommacosx.a
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
 am__v_P_0 = false
@@ -240,7 +242,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LDFLAGS = -static-libgcc -static-libstdc++ -s
+LDFLAGS = 
 LIBOBJS = 
 LIBS =  -L/mingw64/lib -lmingw32 -lSDLmain -lSDL -mwindows -lpng -lz -lopengl32 -lwinmm
 LTLIBOBJS = 
@@ -316,11 +318,12 @@ top_build_prefix = ../
 top_builddir = ..
 top_srcdir = ..
 AM_CPPFLAGS = -I$(top_srcdir)/include
-SUBDIRS = cpu debug dos fpu gui hardware libs ints misc shell platform 
+SUBDIRS = cpu debug dos fpu gui hardware libs ints misc shell platform sdl_cdrom 
 ico_stuff = winres.rc
 dosbox_SOURCES = dosbox.cpp $(ico_stuff)
 dosbox_LDADD = cpu/libcpu.a debug/libdebug.a dos/libdos.a fpu/libfpu.a  hardware/libhardware.a gui/libgui.a \
-               ints/libints.a misc/libmisc.a shell/libshell.a hardware/serialport/libserial.a libs/gui_tk/libgui_tk.a
+               ints/libints.a misc/libmisc.a shell/libshell.a hardware/serialport/libserial.a libs/gui_tk/libgui_tk.a \
+               sdl_cdrom/libcsdlcdrom.a sdl_cdrom/macos/libcsdlcdrommacos.a sdl_cdrom/macosx/libcsdlcdrommacosx.a
 
 EXTRA_DIST = winres.rc dosbox.ico
 all: all-recursive

@@ -32,6 +32,9 @@
 #include "mem.h"
 #include "mixer.h"
 #include "SDL.h"
+#if SDL_VERSION_ATLEAST(2,0,0)
+#include "../sdl_cdrom/compat_SDL_cdrom.h"
+#endif
 #include "SDL_thread.h"
 
 #if defined(C_SDL_SOUND)
@@ -41,7 +44,9 @@
 #define RAW_SECTOR_SIZE		2352
 #define COOKED_SECTOR_SIZE	2048
 
+#if C_PHYSICAL_CDROM_MOUNT
 enum { CDROM_USE_SDL, CDROM_USE_ASPI, CDROM_USE_IOCTL_DIO, CDROM_USE_IOCTL_DX, CDROM_USE_IOCTL_MCI };
+#endif
 
 typedef struct SMSF {
 	unsigned char min;
@@ -84,6 +89,7 @@ public:
 	virtual void	InitNewMedia		(void) {};
 };	
 
+#if C_PHYSICAL_CDROM_MOUNT
 class CDROM_Interface_SDL : public CDROM_Interface
 {
 public:
@@ -112,6 +118,7 @@ private:
 	int		driveID;
 	Uint32	oldLeadOut;
 };
+#endif /* C_PHYSICAL_CDROM_MOUNT */
 
 class CDROM_Interface_Fake : public CDROM_Interface
 {
@@ -237,6 +244,8 @@ typedef	std::vector<Track>::iterator	track_it;
 	Bit8u	subUnit;
 };
 
+#if C_PHYSICAL_CDROM_MOUNT
+
 #if defined (WIN32)	/* Win 32 */
 
 #define WIN32_LEAN_AND_MEAN		// Exclude rarely-used stuff from Windows headers
@@ -296,10 +305,9 @@ class CDROM_Interface_Ioctl : public CDROM_Interface
 {
 public:
 	enum cdioctl_cdatype { CDIOCTL_CDA_DIO, CDIOCTL_CDA_MCI, CDIOCTL_CDA_DX };
-	cdioctl_cdatype cdioctl_cda_selected;
-
-	CDROM_Interface_Ioctl		(cdioctl_cdatype ioctl_cda);
+	CDROM_Interface_Ioctl		(cdioctl_cdatype);
 	virtual ~CDROM_Interface_Ioctl(void);
+	cdioctl_cdatype cdioctl_cda_selected;
 
 	bool	SetDevice			(char* path, int forceCD);
 
@@ -393,5 +401,7 @@ private:
 };
 
 #endif /* LINUX */
+
+#endif /* C_PHYSICAL_CDROM_MOUNT */
 
 #endif /* __CDROM_INTERFACE__ */
