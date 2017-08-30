@@ -44,7 +44,7 @@
 #define C_DIRECTSERIAL 1
 
 /* Define to 1 to use x86 dynamic cpu core */
-#define C_DYNAMIC_X86 1
+#define C_DYNAMIC_X86 0
 
 /* Define to 1 to use recompiling cpu core. Can not be used together with the
    dynamic-x86 core */
@@ -54,7 +54,7 @@
 #define C_FPU 1
 
 /* Define to 1 to use a x86/x64 assembly fpu core */
-#define C_FPU_X86 1
+#define C_FPU_X86 0
 
 /* Determines if the compilers supports attributes for structures. */
 #define C_HAS_ATTRIBUTE 1

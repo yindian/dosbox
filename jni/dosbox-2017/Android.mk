@@ -1,7 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := dosbox_main-2017
+LOCAL_MODULE := dosbox_main
 
 CG_SUBDIRS := \
 src/dos \
@@ -30,9 +30,10 @@ CG_SRCDIR := $(LOCAL_PATH)
 LOCAL_CFLAGS :=	-I$(LOCAL_PATH)../include \
 				-I$(LOCAL_PATH)/include \
 				$(foreach D, $(CG_SUBDIRS), -I$(CG_SRCDIR)/$(D)) \
-				-I$(LOCAL_PATH)/../sdl/include \
+				-I$(LOCAL_PATH)/../SDL2/include \
 				-I$(LOCAL_PATH)/../fishstix/include \
-				-I$(LOCAL_PATH) 
+				-I$(LOCAL_PATH) \
+				-I$(LOCAL_PATH)/.. \
 #				-I$(LOCAL_PATH)/../sdl_net/include \
 #				-I$(LOCAL_PATH)/../sdl_sound/include \				
 

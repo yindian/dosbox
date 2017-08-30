@@ -1,8 +1,0 @@
-debug_disasm.o: debug_disasm.cpp ../../include/dosbox.h ../../config.h \
- ../../include/logging.h
-
-../../include/dosbox.h:
-
-../../config.h:
-
-../../include/logging.h:

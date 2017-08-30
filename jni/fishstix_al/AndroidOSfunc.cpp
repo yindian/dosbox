@@ -73,6 +73,18 @@ jclass JavaCallbackThreadClass = NULL;
 //locnet, 2011-04-28, support 2.1 or below
 jmethodID JavaVideoGetBuffer = NULL;
 
+#ifndef SDL_NOEVENT
+#define SDL_NOEVENT 0
+#endif
+
+#ifndef SDL_MOUSEMOTION_WARP
+#define SDL_MOUSEMOTION_WARP SDL_MOUSEWHEEL
+#endif
+
+#ifndef SDL_MOUSEMOTION_ABSOLUTE
+#define SDL_MOUSEMOTION_ABSOLUTE SDL_MOUSEMOTION
+#endif
+
 void Android_Init(JNIEnv * env, jobject obj, jobject bitmap, jint width, jint height) {
 	gEnv = env;
 	JavaCallbackThread = env->NewGlobalRef(obj);

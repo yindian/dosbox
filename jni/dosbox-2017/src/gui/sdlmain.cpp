@@ -16,7 +16,6 @@
  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
 
-
 #ifndef _GNU_SOURCE
 #define _GNU_SOURCE
 #endif
@@ -38,7 +37,7 @@
 #include "cross.h"
 #include "SDL.h"
 #if SDL_VERSION_ATLEAST(2,0,0) && C_PHYSICAL_CDROM_MOUNT
-#include "../sdl_cdrom/compat_SDL_cdrom.h"
+#include "SDL_cdrom.h"
 #endif
 
 #include "dosbox.h"
@@ -2603,6 +2602,7 @@ void GFX_ShowMsg(char const* format,...) {
 
 
 void Config_Add_SDL() {
+
 	Section_prop * sdl_sec=control->AddSection_prop("sdl",&GUI_StartUp);
 	sdl_sec->AddInitFunction(&MAPPER_StartUp);
 	Prop_bool* Pbool;

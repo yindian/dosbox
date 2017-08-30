@@ -14,4 +14,8 @@
 # this will make Up/Down/Left/Right key up events with X frames delay,
 # so if application expects you to press and hold button it will process the event correctly.
 #SDL_TRACKBALL_KEYUP_DELAY := 4
-include $(call all-subdir-makefiles)
+APP_ALLOW_MISSING_DEPS:=true
+include dosbox-2017/Android.mk
+include fishstix/Android.mk
+include fishstix_al/Android.mk
+include fishstix_util/Android.mk

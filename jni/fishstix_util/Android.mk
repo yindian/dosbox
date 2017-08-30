@@ -15,7 +15,7 @@ LOCAL_PATH := $(abspath $(LOCAL_PATH))
 CG_SRCDIR := $(LOCAL_PATH)
 LOCAL_CFLAGS :=	-I$(LOCAL_PATH)/include \
 				-I$(LOCAL_PATH)/../fishstix/include \
-				-I$(LOCAL_PATH)/../dosbox \
+				-I$(LOCAL_PATH)/../dosbox-2017 \
 				-I$(LOCAL_PATH) \
 				
 LOCAL_PATH := $(MY_PATH)

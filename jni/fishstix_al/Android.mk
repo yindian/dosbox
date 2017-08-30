@@ -16,10 +16,10 @@ CG_SRCDIR := $(LOCAL_PATH)
 LOCAL_CFLAGS :=	-I$(LOCAL_PATH)/include \
 				$(foreach D, $(CG_SUBDIRS), -I$(CG_SRCDIR)/$(D)) \
 				-I$(LOCAL_PATH)/../fishstix/include \
-				-I$(LOCAL_PATH)/../sdl/include \
-				-I$(LOCAL_PATH)/../dosbox \
-				-I$(LOCAL_PATH)/../dosbox/include \
-				-I$(LOCAL_PATH)/../dosbox/src \
+				-I$(LOCAL_PATH)/../SDL2/include \
+				-I$(LOCAL_PATH)/../dosbox-2017 \
+				-I$(LOCAL_PATH)/../dosbox-2017/include \
+				-I$(LOCAL_PATH)/../dosbox-2017/src \
 				-I$(LOCAL_PATH) 
 				
 				

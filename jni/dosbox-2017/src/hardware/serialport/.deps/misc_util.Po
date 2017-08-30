@@ -1,3 +1,0 @@
-misc_util.o: misc_util.cpp ../../../config.h
-
-../../../config.h:

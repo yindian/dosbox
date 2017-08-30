@@ -86,8 +86,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = x86_64-w64-mingw32
-host_triplet = x86_64-w64-mingw32
+build_triplet = i686-w64-mingw32
+host_triplet = i686-w64-mingw32
 bin_PROGRAMS = dosbox$(EXEEXT)
 subdir = src
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -109,9 +109,7 @@ dosbox_OBJECTS = $(am_dosbox_OBJECTS)
 dosbox_DEPENDENCIES = cpu/libcpu.a debug/libdebug.a dos/libdos.a \
 	fpu/libfpu.a hardware/libhardware.a gui/libgui.a \
 	ints/libints.a misc/libmisc.a shell/libshell.a \
-	hardware/serialport/libserial.a libs/gui_tk/libgui_tk.a \
-	sdl_cdrom/libcsdlcdrom.a sdl_cdrom/macos/libcsdlcdrommacos.a \
-	sdl_cdrom/macosx/libcsdlcdrommacosx.a
+	hardware/serialport/libserial.a libs/gui_tk/libgui_tk.a
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
 am__v_P_0 = false
@@ -211,20 +209,20 @@ am__relativize = \
     dir1=`echo "$$dir1" | sed -e "$$sed_rest"`; \
   done; \
   reldir="$$dir2"
-ACLOCAL = ${SHELL} /home/anson/dosbox-code/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/meeso.kim/dosbox/jni/dosbox-2017/missing aclocal-1.15
 ALSA_CFLAGS = 
 ALSA_LIBS = 
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-AUTOCONF = ${SHELL} /home/anson/dosbox-code/missing autoconf
-AUTOHEADER = ${SHELL} /home/anson/dosbox-code/missing autoheader
-AUTOMAKE = ${SHELL} /home/anson/dosbox-code/missing automake-1.15
+AUTOCONF = ${SHELL} /home/meeso.kim/dosbox/jni/dosbox-2017/missing autoconf
+AUTOHEADER = ${SHELL} /home/meeso.kim/dosbox/jni/dosbox-2017/missing autoheader
+AUTOMAKE = ${SHELL} /home/meeso.kim/dosbox/jni/dosbox-2017/missing automake-1.15
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
 CPP = gcc -E
-CPPFLAGS =  -I/mingw64/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main
+CPPFLAGS =  -I/usr/local/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main
 CXX = g++
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -g -O2 -mno-ms-bitfields 
@@ -244,9 +242,9 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LDFLAGS = 
 LIBOBJS = 
-LIBS =  -L/mingw64/lib -lmingw32 -lSDLmain -lSDL -mwindows -lpng -lz -lopengl32 -lwinmm
+LIBS =  -L/usr/local/lib -lmingw32 -lSDLmain -lSDL -mwindows -lpng -lz -lopengl32 -lwinmm
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/anson/dosbox-code/missing makeinfo
+MAKEINFO = ${SHELL} /home/meeso.kim/dosbox/jni/dosbox-2017/missing makeinfo
 MKDIR_P = /usr/bin/mkdir -p
 OBJEXT = o
 PACKAGE = dosbox
@@ -258,18 +256,18 @@ PACKAGE_URL =
 PACKAGE_VERSION = SVN
 PATH_SEPARATOR = :
 RANLIB = ranlib
-SDL_CFLAGS = -I/mingw64/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main
-SDL_CONFIG = /mingw64/bin/sdl-config
-SDL_LIBS = -L/mingw64/lib -lmingw32 -lSDLmain -lSDL -mwindows
+SDL_CFLAGS = -I/usr/local/include/SDL -D_GNU_SOURCE=1 -Dmain=SDL_main
+SDL_CONFIG = /usr/local/bin/sdl-config
+SDL_LIBS = -L/usr/local/lib -lmingw32 -lSDLmain -lSDL -mwindows
 SET_MAKE = 
 SHELL = /bin/sh
 STRIP = 
 VERSION = SVN
 WINDRES = windres
-abs_builddir = /home/anson/dosbox-code/src
-abs_srcdir = /home/anson/dosbox-code/src
-abs_top_builddir = /home/anson/dosbox-code
-abs_top_srcdir = /home/anson/dosbox-code
+abs_builddir = /home/meeso.kim/dosbox/jni/dosbox-2017/src
+abs_srcdir = /home/meeso.kim/dosbox/jni/dosbox-2017/src
+abs_top_builddir = /home/meeso.kim/dosbox/jni/dosbox-2017
+abs_top_srcdir = /home/meeso.kim/dosbox/jni/dosbox-2017
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 am__include = include
@@ -278,9 +276,9 @@ am__quote =
 am__tar = $${TAR-tar} chof - "$$tardir"
 am__untar = $${TAR-tar} xf -
 bindir = ${exec_prefix}/bin
-build = x86_64-w64-mingw32
-build_alias = x86_64-w64-mingw32
-build_cpu = x86_64
+build = i686-w64-mingw32
+build_alias = i686-w64-mingw32
+build_cpu = i686
 build_os = mingw32
 build_vendor = w64
 builddir = .
@@ -289,15 +287,15 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = x86_64-w64-mingw32
+host = i686-w64-mingw32
 host_alias = 
-host_cpu = x86_64
+host_cpu = i686
 host_os = mingw32
 host_vendor = w64
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/anson/dosbox-code/install-sh
+install_sh = ${SHELL} /home/meeso.kim/dosbox/jni/dosbox-2017/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -306,7 +304,7 @@ mandir = ${datarootdir}/man
 mkdir_p = $(MKDIR_P)
 oldincludedir = /usr/include
 pdfdir = ${docdir}
-prefix = /mingw64
+prefix = /mingw32
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
@@ -318,12 +316,11 @@ top_build_prefix = ../
 top_builddir = ..
 top_srcdir = ..
 AM_CPPFLAGS = -I$(top_srcdir)/include
-SUBDIRS = cpu debug dos fpu gui hardware libs ints misc shell platform sdl_cdrom 
+SUBDIRS = cpu debug dos fpu gui hardware libs ints misc shell platform 
 ico_stuff = winres.rc
 dosbox_SOURCES = dosbox.cpp $(ico_stuff)
 dosbox_LDADD = cpu/libcpu.a debug/libdebug.a dos/libdos.a fpu/libfpu.a  hardware/libhardware.a gui/libgui.a \
-               ints/libints.a misc/libmisc.a shell/libshell.a hardware/serialport/libserial.a libs/gui_tk/libgui_tk.a \
-               sdl_cdrom/libcsdlcdrom.a sdl_cdrom/macos/libcsdlcdrommacos.a sdl_cdrom/macosx/libcsdlcdrommacosx.a
+               ints/libints.a misc/libmisc.a shell/libshell.a hardware/serialport/libserial.a libs/gui_tk/libgui_tk.a
 
 EXTRA_DIST = winres.rc dosbox.ico
 all: all-recursive
