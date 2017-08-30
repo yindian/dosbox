@@ -48,7 +48,7 @@
 
 /* Define to 1 to use recompiling cpu core. Can not be used together with the
    dynamic-x86 core */
-/* #undef C_DYNREC */
+#define C_DYNREC 1
 
 /* Define to 1 to enable floating point emulation */
 #define C_FPU 1
@@ -88,7 +88,8 @@
 #define C_SSHOT 0
 
 /* The type of cpu this target has */
-#define C_TARGETCPU X86
+#define C_TARGETCPU ARMV4LE
+//#define C_TARGETCPU X86
 
 /* Define to 1 to use a unaligned memory access */
 #define C_UNALIGNED_MEMORY 1
