@@ -100,7 +100,11 @@
 
 /* The type of cpu this target has */
 /* #define C_TARGETCPU ARMV4LE */
+#ifdef __ARM_ARCH_ISA_ARM
 #define C_TARGETCPU ARMV7LE
+#else
+#define C_TARGETCPU X86
+#endif
 
 /* Define to 1 to use a unaligned memory access */
 /* #define C_UNALIGNED_MEMORY 1 */
