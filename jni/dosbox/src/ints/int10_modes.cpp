@@ -23,7 +23,6 @@
 #include "mem.h"
 #include "inout.h"
 #include "int10.h"
-#include "mouse.h"
 #include "vga.h"
 
 #define _EGA_HALF_CLOCK		0x0001
@@ -438,8 +437,6 @@ static void FinishSetMode(bool clearmem) {
 	case 14:RealSetVec(0x43,int10.rom.font_14);break;
 	case 16:RealSetVec(0x43,int10.rom.font_16);break;
 	}
-	/* Tell mouse resolution change */
-	Mouse_NewVideoMode();
 }
 
 bool INT10_SetVideoMode_OTHER(Bit16u mode,bool clearmem) {
@@ -997,7 +994,9 @@ bool INT10_SetVideoMode(Bit16u mode) {
 	if (svgaCard == SVGA_S3Trio) {
 		/* Setup the correct clock */
 		if (CurMode->mode>=0x100) {
-			misc_output|=0xef;		//Select clock 3 
+			if (CurMode->vdispend>480)
+				misc_output|=0xc0;	//480-line sync
+			misc_output|=0x0c;		//Select clock 3 
 			Bitu clock=CurMode->vtotal*8*CurMode->htotal*70;
 			VGA_SetClock(3,clock/1000);
 		}
