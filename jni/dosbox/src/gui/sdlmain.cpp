@@ -226,6 +226,8 @@ struct SDL_Block {
 	Bitu num_joysticks;
 #if defined (WIN32)
 	bool using_windib;
+	// Time when sdl regains focus (alt-tab) in windowed mode
+	Bit32u focus_ticks;
 #endif
 	// state of alt-keys for certain special handlings
 	Bit8u laltstate;
@@ -1576,6 +1578,9 @@ void GFX_Events() {
 		case SDL_ACTIVEEVENT:
 			if (event.active.state & SDL_APPINPUTFOCUS) {
 				if (event.active.gain) {
+#ifdef WIN32
+					if (!sdl.desktop.fullscreen) sdl.focus_ticks = GetTicks();
+#endif
 					if (sdl.desktop.fullscreen && !sdl.mouse.locked)
 						GFX_CaptureMouse();
 					SetPriority(sdl.priority.focus);
@@ -1667,6 +1672,10 @@ void GFX_Events() {
 			if (event.key.keysym.sym==SDLK_RALT) sdl.raltstate = event.key.type;
 			if (((event.key.keysym.sym==SDLK_TAB)) &&
 				((sdl.laltstate==SDL_KEYDOWN) || (sdl.raltstate==SDL_KEYDOWN))) break;
+			// This can happen as well.
+			if (((event.key.keysym.sym == SDLK_TAB )) && (event.key.keysym.mod & KMOD_ALT)) break;
+			// ignore tab events that arrive just after regaining focus. (likely the result of alt-tab)
+			if ((event.key.keysym.sym == SDLK_TAB) && (GetTicks() - sdl.focus_ticks < 2)) break;
 #endif
 		default:
 			void MAPPER_CheckEvent(SDL_Event * event);
